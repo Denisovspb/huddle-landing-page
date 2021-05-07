@@ -6,7 +6,7 @@
     &__content {
         
         @include breakpoint-down(medium){
-            flex-direction: column;
+            flex-direction: column-reverse;
             align-items: center;
         }
     }
@@ -36,7 +36,6 @@
 
         @include breakpoint-down(medium){
             max-width: 70%;
-            margin-bottom: 10rem;
         }
 
         @media (max-width: 430px){
@@ -86,6 +85,7 @@
 
         @include breakpoint-down(medium){
             max-width: 70%;
+            margin-bottom: 10rem;
         }
 
         @media (max-width: 430px){
