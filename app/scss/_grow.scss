@@ -1,0 +1,44 @@
+.grow {
+    background-color: #F6FBFF;
+    padding: 6rem 1rem;
+
+    &__bg-desktop {
+        width: 100%;
+        display: block;
+        height: auto;
+
+        @include breakpoint-down(medium){
+            display: none;
+        }
+    }
+
+    &__bg-mobile {
+        width: 100%;
+        display: block;
+        height: auto;
+
+        @include breakpoint-up(large){
+            display: none;
+        }
+    }
+
+    &__content {
+        position: relative;
+        gap: 8rem;
+
+        @include breakpoint-down(medium){
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+    }
+
+    &__image {
+        img {
+            width: 100%;
+
+            @include breakpoint-down(medium){
+                width: 50%;
+            }
+        }
+    }
+}

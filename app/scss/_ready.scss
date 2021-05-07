@@ -1,0 +1,18 @@
+.ready {
+    padding: 10rem 1rem;
+
+    &__content {
+        text-align: center;
+
+        @include breakpoint-down(medium){
+            flex-direction: column;
+        }
+    }
+
+    &__title {
+        margin-bottom: 2rem;
+    }
+
+    &__cta {
+    }
+}

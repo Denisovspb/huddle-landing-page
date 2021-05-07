@@ -1,0 +1,58 @@
+.header {
+
+    padding: 3rem 1rem 10.875rem;
+
+    &__content {
+
+    }
+
+    &__logo {
+
+        max-width: 240px;
+
+        a {
+            display: inline-block;
+        }
+
+        @include breakpoint-down(small){
+            
+            a {
+                width: 90%;
+            }
+            
+            img {
+                width: 100%;
+            }
+        }
+
+        @media (max-width:420px){
+            a {
+                width: 80%;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__cta {
+
+        a {
+            display: inline-block;
+            width: 122px;
+            height: 40px;
+            color: $pink;
+            border: 1px solid $pink;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            transition: all 250ms ease-in-out;
+            position: relative;
+
+            &:hover {
+                background-color: $pink;
+                color: $white;
+            }
+        }
+    }
+}
